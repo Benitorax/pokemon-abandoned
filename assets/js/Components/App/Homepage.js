@@ -13,30 +13,26 @@ export default function Homepage() {
     return (
         <>
             <ErrorBoundary>
-                <section className="section">
-                    <div className="container">
-                        <Switch>
-                            <Route path="/login">
-                                <Login />
-                            </Route>
-                            <Route path="/sign-in">
-                                <SignIn />
-                            </Route>
-                            <Route>
-                                <div className="columns">
-                                    <button className="button is-horizontal-center">
-                                        <Link className="navbar-item" to="/login">Log in</Link>
-                                    </button>
-                                </div>
-                                <div className="columns">
-                                    <button className="button is-horizontal-center">
-                                        <Link className="navbar-item" to="/sign-in">Sign in</Link>
-                                    </button>
-                                </div>
-                            </Route>
-                        </Switch>
-                    </div>
-                </section>
+                    <Switch>
+                        <Route path="/login">
+                            <Login />
+                        </Route>
+                        <Route path="/sign-in">
+                            <SignIn />
+                        </Route>
+                        <Route>
+                            <div className="columns has-margin-5">
+                                <button className="button is-horizontal-center">
+                                    <Link className="navbar-item" to="/login">Log in</Link>
+                                </button>
+                            </div>
+                            <div className="columns has-margin-5">
+                                <button className="button is-horizontal-center">
+                                    <Link className="navbar-item" to="/sign-in">Sign in</Link>
+                                </button>
+                            </div>
+                        </Route>
+                    </Switch>
             </ErrorBoundary>
         </>
     );

@@ -1,4 +1,3 @@
-import ErrorBoundary from '../Error/ErrorBoundary';
 import Homepage from './App/Homepage';
 
 import {
@@ -13,11 +12,9 @@ import {
 export default function Pokemon() {
   return (
         <Router>
-            <ErrorBoundary>
             <nav className="navbar is-primary">
                 <div className="container">
                     <Link className="navbar-item" to="/">Home</Link>
-                    <Link className="navbar-item" to="/">Home bis</Link>
                 </div>
             </nav>
 
@@ -30,7 +27,6 @@ export default function Pokemon() {
                     </Switch>
                 </div>
             </section>
-            </ErrorBoundary>
       </Router>
   );
 }
