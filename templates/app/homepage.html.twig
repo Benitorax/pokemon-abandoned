@@ -8,4 +8,7 @@
 
 {% block javascripts %}
     {{ parent() }}
+    <script>
+        window.user = {{ user|raw }};
+    </script>
 {% endblock %}

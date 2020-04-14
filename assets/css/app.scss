@@ -4,6 +4,11 @@
     margin-right: auto;
 }
 
+.is-horizontal-right {
+    display: flex;
+    margin-left: auto;
+}
+
 .is-vertical-center {
     display: flex;
     margin-top: auto;
@@ -12,6 +17,20 @@
 
 .is-title-1 {
     margin-bottom: 10px;
+}
+
+.is-justify-content-space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.section {
+	padding-top: 5px;
+
+}
+
+.has-row-reverse {
+	flex-direction: row-reverse;
 }
 
 //////////////////////////////////////////

@@ -6,7 +6,7 @@ import '../css/app.scss';
 
 import React from "react";
 import { render } from 'react-dom';
-import PokemonApp from './Components/Pokemon';
+import PokemonApp from './Component/Pokemon';
 
 render(
     <PokemonApp/>,
